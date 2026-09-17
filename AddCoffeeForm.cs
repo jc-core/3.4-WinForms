@@ -11,6 +11,7 @@ namespace Assignment3_4 {
         private void AddCoffeeForm_Load(object sender, EventArgs e) {
 
             comboBoxCoffeeType.DataSource = Enum.GetValues(typeof(CoffeeName));
+            comboBoxCoffeeType.SelectedItem = CoffeeName.DripCoffee;
             comboBoxSize.DataSource = Enum.GetValues(typeof(CupSize));
             comboBoxRoast.DataSource = Enum.GetValues(typeof(RoastType));
             comboBoxSize.SelectedItem = CupSize.Medium;
